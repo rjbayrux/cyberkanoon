@@ -3,10 +3,16 @@ import { Button } from './ui/button';
 import { ArrowRight, Shield } from 'lucide-react';
 import heroImage from '@/assets/cyber-hero.jpg';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 export const HeroSection = () => {
   const { t } = useLanguage();
-  
+  const navigate = useNavigate(); // Initialize navigate
+
+  const handleButtonClick = () => {
+    navigate('/cyber-laws'); // Redirect to /cyber-laws
+  };
+
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-to-br from-background via-muted/30 to-background">
       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5" />
@@ -36,16 +42,17 @@ export const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="text-lg px-8 py-6">
+              <Button 
+                size="lg" 
+                className="text-lg px-8 py-6"
+                onClick={handleButtonClick} // Add onClick handler
+              >
                 {t('exploreLaws')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6">
-                Report Cybercrime
-              </Button>
             </div>
 
-            <div className="flex items-center gap-8 pt-4">
+            {/* <div className="flex items-center gap-8 pt-4">
               <div className="text-center">
                 <div className="text-2xl font-bold text-primary">1000+</div>
                 <div className="text-sm text-muted-foreground">Cases Resolved</div>
@@ -58,7 +65,7 @@ export const HeroSection = () => {
                 <div className="text-2xl font-bold text-primary">Free</div>
                 <div className="text-sm text-muted-foreground">Information</div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="relative">

@@ -28,7 +28,7 @@ const CyberLawLibrary = () => {
         - Social media platform reporting
         - Legal remedies available
       `,
-      pdfLink: '#'
+      pdfLink: 'https://cyberbureau.nepalpolice.gov.np/media/filer_public/96/94/96949ad0-6c77-4702-abf3-c991096af9ef/fake-or-hacked-ccb-2082.pdf'
     },
     {
       title: t('digitalFraud'),
@@ -48,7 +48,7 @@ const CyberLawLibrary = () => {
         - Identity theft
         - Phishing attacks
       `,
-      pdfLink: '#'
+      pdfLink: 'https://cyberbureau.nepalpolice.gov.np/media/filer_public/a3/c7/a3c70d50-2e45-432e-b983-b36d792d9c60/financial-fraud-p-2-ccb-2082.pdf'
     },
     {
       title: t('dataPrivacy'),
@@ -68,7 +68,7 @@ const CyberLawLibrary = () => {
         - Right to correction and deletion
         - Protection from unauthorized disclosure
       `,
-      pdfLink: '#'
+      pdfLink: 'https://cyberbureau.nepalpolice.gov.np/media/filer_public/b1/c4/b1c4c754-7f65-4d72-9c62-93c517712608/awasyek-karbahi-gari-pau-2082.pdf'
     },
     {
       title: t('eTransactions'),
@@ -88,7 +88,7 @@ const CyberLawLibrary = () => {
         - Secure authentication
         - Record keeping requirements
       `,
-      pdfLink: '#'
+      pdfLink: 'https://cyberbureau.nepalpolice.gov.np/media/filer_public/54/2e/542ebd9f-635c-4852-812d-505d56d3c21e/request-for-necessary-action.pdf'
     }
   ];
 
