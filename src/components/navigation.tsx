@@ -26,11 +26,14 @@ export const Navigation = () => {
           <Link to="/cyber-laws" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
             {t('cyberLaws')}
           </Link>
-          <a href="#" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+          <Link to="/what-to-do" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
             {t('whatToDo')}
-          </a>
-          <a href="#" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+          </Link>
+          <Link to="/case-studies" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
             {t('caseStudies')}
+          </Link>
+          <a href="#" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            {t('updates')}
           </a>
         </div>
 
