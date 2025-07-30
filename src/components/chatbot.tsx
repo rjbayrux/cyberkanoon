@@ -26,13 +26,15 @@ export const Chatbot = () => {
   ]);
   const [inputText, setInputText] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const apiKey = 'AIzaSyDqK7B3yQHFKK1ZJms0xPwC_un1OP2p5jU';
+  const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
   // Initialize Gemini AI
   const initializeGemini = () => {
     try {
       const genAI = new GoogleGenerativeAI(apiKey);
-      return genAI.getGenerativeModel({ model: "gemini-pro" });
+      console.log('Gemini AI initialized successfully');
+      // Use the correct model path for Gemini
+      return genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     } catch (error) {
       console.error('Error initializing Gemini:', error);
       return null;
